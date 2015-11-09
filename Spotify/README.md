@@ -1,7 +1,7 @@
 What is the purpose of your project (i.e., why would someone use this app)?
 	This application helps people find new music.
 What is the URL of this project on your student web-server?
-	
+	http://students.washington.edu/kezis/info343/SpotifyChallenge/Spotify/
 Did you receive help from any other sources (classmates, etc.)? If so, please list who.
 	I didn't receive any help from anyone, but I did help Julian and Royce a bit. 
 Approximately how many hours did it take you to complete this challenge?
