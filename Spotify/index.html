@@ -65,11 +65,11 @@
 				</div>
 			</div>
 		</div>
-		<div id="searchResults" class="container-fixed">
+		<div id="searchResults" class="container">
 			<img class="header" src="images/select.png">
 			<div id="selectImages container">
 				<div ng-repeat="track in tracks" class="eachImage" ng-click="newArtist(track.artists)" title="{{track.name}}">
-					<img class="albumArt" src="{{track.album.images[0].url}}" ng-mouseover="hover()" ng-mouseout="noHover()">
+					<img class="albumArt" src="{{track.album.images[0].url}}">
 					<div class="overlay">{{track.name + ' by ' + track.artists[0].name}}</div>
 				</div>
 			</div>			
@@ -79,7 +79,7 @@
 			<img class="header" src="images/listen.png">
 			<div class="help-block text-center">
 				<span ng-show="tracks.length>0">Click to sample</span>
-				<span ng-show="currentSong && !audioObject.paused">{{'Now listening to ' + thisName}}</span>
+				<span ng-show="currentSong && !audioObject.paused">{{'(Now listening to ' + thisName + ')'}}</span>
 			</div>
 			<div class="selectImages container">
 				<div ng-repeat="artist in artists" class="eachImage" ng-click="play(artist.songs.preview_url, artist)"  title="{{track.name}}">
